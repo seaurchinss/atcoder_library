@@ -50,7 +50,8 @@ struct RMQ{
     //l,r:queryで求める範囲 nl,nr:現在調査中の範囲
     T ans=0;
     void search(int now,int l,int r,int nl,int nr){
-        //nl=1 nr = datasize を入力(再起関数使うからやむを得ない)
+        //nl=0 nr = datasize-1 を入力(再起関数使うからやむを得ない)
+        //範囲も葉の添え字と一致させるべき
         if(l>nr||r<nl) return;
         //l,rが範囲と全くかぶらない場合の処理
         if(l<nl) l = nl;
