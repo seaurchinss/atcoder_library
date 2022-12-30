@@ -32,7 +32,7 @@ struct RMQ{
         queue<int> q;
         //q:木を作る際、次に注目するものを入れる
         //葉にデータを格納
-        for(int i=0;i<(tmp/2);++i){
+        for(int i=0;i<datasize;++i){
             if(i<n) tree[leaf+i] = a[i];
             q.push(leaf+i);
         }
