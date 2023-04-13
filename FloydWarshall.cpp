@@ -1,3 +1,6 @@
+#include<vector>
+using namespace std;
+using ll = long long ;
 vector<vector<ll>> FloydWarshallAlgorithm(vector<vector<ll>> dist,int v){
     for(int k=0;k<v;++k){
         for(int i=0;i<v;++i){
